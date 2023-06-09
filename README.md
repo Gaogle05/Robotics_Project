@@ -8,3 +8,5 @@ Things to do:
 - Have a node to read (x,y) location from std input, and then navigate to that point. (Use gazebo state service) - *Should be able to navigate to at least 2 points
 - Have a node that scans pixels visually to fing "Utility Cart" (Bright green) - Output "Yes" for found, otherwise "No"
 - Video to show everything works.
+
+
