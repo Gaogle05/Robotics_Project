@@ -1,3 +1,5 @@
+# NOTE: "src" folder contains latest code by Salmaan
+
 # Robotics_Project
 SurveillanceBot
 
