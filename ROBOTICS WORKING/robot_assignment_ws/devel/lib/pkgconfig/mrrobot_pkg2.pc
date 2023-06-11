@@ -1,0 +1,8 @@
+prefix=/home/salmaan/ros_home/robot_assignment_ws/devel
+
+Name: mrrobot_pkg2
+Description: Description of mrrobot_pkg2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
