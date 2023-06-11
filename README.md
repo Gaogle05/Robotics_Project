@@ -12,3 +12,17 @@ Things to do:
 - Video to show everything works.
 
 Link to Report: https://www.overleaf.com/1179483169vfwvkpqbxhtm
+
+# map origin: [-13.80, 12.20, 0.00]
+# map resolution/scale: 0.05
+
+# convert world coords to pixel coords and vice versa
+def world_to_pixel(x1, y1):
+    x = round((13.80 - x1)/0.50)
+    y = round((12.20 - y1)/0.50)
+    return x, y
+
+def pixel_to_world(x1, y1):
+    x = 13.80 - (x1 * 0.05)
+    y = 12.20 - (y1 * 0.05)
+    return x, y
