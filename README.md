@@ -14,27 +14,28 @@ Things to do:
 # To run the code for intruderAlert
 ## Note you need to move this into the correct folder where the other code is (I didn't want to break things so I didn't add it directly into your folder.
 
-source devel/setup.bash
-./startWorld
+New Tab
+``` source devel/setup.bash ```
+``` ./startWorld ```
 
 New Tab
-source devel/setup.bash
-roslaunch turtlebot_rviz_launchers view_robot.launch
+``` source devel/setup.bash ```
+``` roslaunch turtlebot_rviz_launchers view_robot.launch ```
 
 In rviz
-Under the display panel:
-    Choose point cloud 
-    Choose Image
-        Under Image
-        Change Image Topic to /camera/rgb/image_raw
+- Under the display panel:
+    - Choose point cloud 
+    - Choose Image
+        - Under Image
+        - Change Image Topic to /camera/rgb/image_raw
         
  In Gazebo from the insert tab insert Utility Cart
- Place the cart in desired position 
+    - Place the cart in desired position 
  
  
  To run intruderAlert 
- New terminal tab:
-    source devel/setup.bash
-    rostopic echo intruderAlert
+ - New terminal tab:
+    ``` source devel/setup.bash ```
+    ``` rostopic echo intruderAlert ```
  
  
