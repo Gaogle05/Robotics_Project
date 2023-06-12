@@ -11,18 +11,30 @@ Things to do:
 - Have a node that scans pixels visually to fing "Utility Cart" (Bright green) - Output "Yes" for found, otherwise "No"
 - Video to show everything works.
 
-Link to Report: https://www.overleaf.com/1179483169vfwvkpqbxhtm
+# To run the code for intruderAlert
+## Note you need to move this into the correct folder where the other code is (I didn't want to break things so I didn't add it directly into your folder.
 
-# map origin: [-13.80, 12.20, 0.00]
-# map resolution/scale: 0.05
+source devel/setup.bash
+./startWorld
 
-# convert world coords to pixel coords and vice versa
-def world_to_pixel(x1, y1):
-    x = round((13.80 - x1)/0.50)
-    y = round((12.20 - y1)/0.50)
-    return x, y
+New Tab
+source devel/setup.bash
+roslaunch turtlebot_rviz_launchers view_robot.launch
 
-def pixel_to_world(x1, y1):
-    x = 13.80 - (x1 * 0.05)
-    y = 12.20 - (y1 * 0.05)
-    return x, y
+In rviz
+Under the display panel:
+    Choose point cloud 
+    Choose Image
+        Under Image
+        Change Image Topic to /camera/rgb/image_raw
+        
+ In Gazebo from the insert tab insert Utility Cart
+ Place the cart in desired position 
+ 
+ 
+ To run intruderAlert 
+ New terminal tab:
+    source devel/setup.bash
+    rostopic echo intruderAlert
+ 
+ 
